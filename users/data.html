@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-info shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GeoInfoSys <i class="bi bi-globe-americas"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="data">
+      <div class="container-fluid p-4">
+        <div class="row card rounded-0 mt-3">
+          <div class="card-header">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h3>Data Titik Lokasi Rawan Kecelakaan 2021-2022</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body p-0">
+            <table class="table table-bordered">
+              <thead>
+                <tr class="text-center">
+                  <th scope="col">No</th>
+                  <th scope="col" class="col-3">Titik Rawan Kecelakaan</th>
+                  <th scope="col">lattitude</th>
+                  <th scope="col">longtitude</th>
+                  <th scope="col">k.tunggal</th>
+                  <th scope="col">k.lari</th>
+                  <th scope="col">k.beruntun</th>
+                  <th scope="col">Total laka</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-center">1</th>
+                  <td>Pandansari, Kutamendala, kec.Tonjong, Kabupaten Brebes, Jawa Tengah 52271, Indonesia</td>
+                  <td>-7,158673823</td>
+                  <td>108,9904836</td>
+                  <td>40</td>
+                  <td>15</td>
+                  <td>1</td>
+                  <td>14</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/maps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
